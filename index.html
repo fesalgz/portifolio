@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    
+    <!-- Meta tags for SEO & Theme -->
+    <meta name="description" content="Portfólio de desenvolvedor showcasing projetos e habilidades.">
+    
+    <!-- Premium Fonts: Outfit for Heading, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Lighter, beautiful alternative to FontAwesome) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Glow effect following the mouse -->
+    <div id="mouse-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar hidden-onload fade-down">
+        <a href="#hero" class="logo" id="nav-logo">Portfólio.</a>
+        <div class="nav-links">
+            <a href="#about">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero hidden">
+            <div class="hero-content">
+                <div class="hero-image-container hidden-onload fade-up">
+                    <img id="hero-img" src="" alt="Minha Foto" class="hero-avatar">
+                </div>
+                <p class="greeting hidden-onload fade-up" style="animation-delay: 0.1s;">Olá, eu sou o</p>
+                <h1 class="name-highlight hidden-onload fade-up" style="animation-delay: 0.2s;" id="hero-name">Carregando...</h1>
+                <h2 class="role hidden-onload fade-up" style="animation-delay: 0.3s;" id="hero-role">...</h2>
+                <div class="social-links-hero hidden-onload fade-up" style="animation-delay: 0.4s;" id="hero-social">
+                    <!-- Gerado pelo JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about hidden reveal">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+                <div class="line"></div>
+            </div>
+            <div class="card glass-card">
+                <p id="about-text">...</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills hidden reveal">
+            <div class="section-header">
+                <h2>Habilidades & Tecnologias</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid" id="skills-container">
+                <!-- Gerado pelo JS -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects hidden reveal">
+            <div class="section-header">
+                <h2>Meus Projetos</h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Gerado pelo JS -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact hidden reveal">
+            <div class="section-header">
+                <h2>Vamos Conversar?</h2>
+                <div class="line"></div>
+            </div>
+            <div class="card glass-card contact-card">
+                <p>Estou aberto a novas oportunidades e desafios interessantes.</p>
+                <div class="contact-actions" id="contact-actions">
+                    <!-- Gerado pelo JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desenvolvido com <i class="ph-fill ph-heart"></i> por <span id="footer-name">...</span></p>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Carrega os dados primeiro -->
+    <script src="dados.js"></script>
+    <!-- Carrega a logica do app -->
+    <script src="script.js"></script>
+</body>
+</html>
